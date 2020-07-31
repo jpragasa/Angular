@@ -31,5 +31,24 @@
 </div> -->
 
 <!-- Template variables and Event Filtering -->
-<input #email (keyup.enter)="onKeyUp(email.value)" type="email" required/>
-<div></div>
+<!-- <input #email (keyup.enter)="onKeyUp(email.value)" type="email" required/>
+<div></div> -->
+
+<!-- Two way binding -->
+<!-- <input [value]="email" (keyup.enter)="email = $event.target.value; onKeyUp()"/> -->
+<!-- <div></div> -->
+<!-- the best way for 2 way binding -->
+<!-- <input [(ngModel)]="email" (keyup.enter)="onKeyUp()"/>
+<div></div> -->
+
+<!-- Piping -->
+<!-- {{course.title | uppercase}} <br>
+Students: {{course.students | number}} <br>
+Rating: {{course.rating | number:'1.2-2'}} <br>
+Price: {{course.price | currency:'AUD':true:'3.2-2'}} <br>
+Release Date: {{course.releaseDate | date:'shortDate'}} -->
+<!-- For more piping attributes go to: angular.io -> search what you want, may be in CommonModule-->
+
+
+<!-- Custom Pipes -->
+{{text | summary:10}}

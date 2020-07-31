@@ -9,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class CoursesComponent implements OnInit {
 
   title = "Courses List";
+  email = "me@example.com";
   isActive = true;
   imageUrl = "http://lorempixel.com/400/200";
   colSpan = 2;
   courses = [];
+  text = `Lorem Ipsum blah blah blah`;
+  course = {
+    title: "The Complete Angular Course",
+    rating: 5,
+    students: 30999,
+    price: 10,
+    releaseDate: new Date(2020, 7, 31)
+  }
   constructor(service: CoursesService) {
     this.courses = service.getCourses();
    }
@@ -35,10 +44,10 @@ export class CoursesComponent implements OnInit {
     document.querySelector("div").innerHTML = `Div was clicked :)`;
   }
 
-  onKeyUp(email) {
+  onKeyUp() {
     // console.log($event.target.value);
     // document.querySelector("div").innerHTML = `${$event.target.value}`;
-    document.querySelector("div").innerHTML = `${email}`;
+    document.querySelector("div").innerHTML = `${this.email}`;
   }
 
 }
