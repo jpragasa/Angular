@@ -57,17 +57,55 @@ var doLogWithNoParams = function () { return console.log(message); };
 // Cohesion: Things that need to be together should stay together
 // Class: groups variables (properties) and functions (methods) that are highly related
 var Point = /** @class */ (function () {
-    function Point() {
+    // Access modiefies: public, protected, private
+    // private x: number;
+    // private y: number;
+    // Adding ? will make the parameter optional
+    function Point(_x, _y) {
+        this._x = _x;
+        this._y = _y;
+        // this.x = x;
+        // this.y = y;
     }
     Point.prototype.draw = function () {
-        console.log('x: ' + this.x + ', y: ' + this.y);
+        console.log('x: ' + this._x + ', y: ' + this._y);
     };
-    Point.prototype.getDistance = function (another) {
-    };
+    Object.defineProperty(Point.prototype, "x", {
+        get: function () {
+            return this._x;
+        },
+        set: function (value) {
+            if (value < 0) {
+                throw new Error('value cannot be less than 0.');
+            }
+            else {
+                this._x = value;
+            }
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Point.prototype, "y", {
+        get: function () {
+            return this._y;
+        },
+        set: function (value) {
+            if (value < 0) {
+                throw new Error('value cannot be less than 0.');
+            }
+            else {
+                this._y = value;
+            }
+        },
+        enumerable: false,
+        configurable: true
+    });
     return Point;
 }());
 //Object use for the above class
-var point = new Point();
-point.x = 3;
-point.y = 5;
+var point = new Point(1, 2);
+// let x = point.X;
+// point.X = 10;
+var x = point.x;
+point.x = 10;
 point.draw();

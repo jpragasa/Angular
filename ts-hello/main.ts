@@ -51,6 +51,8 @@ let log = function(message)
 let doLog = (message) => console.log(message);
 let doLogWithNoParams = () => console.log(message);
 
+
+
     //Interfaces Allow you to predefine an object, cannot have implementation, only a signature
     // interface Point {
     //     x: number,
@@ -67,23 +69,73 @@ let doLogWithNoParams = () => console.log(message);
 
     // Class: groups variables (properties) and functions (methods) that are highly related
 
-class Point {
-    x: number;
-    y: number;
-    draw() {
-        console.log('x: ' + this.x + ', y: ' + this.y);
-    }
+// class Point {
+//     // Access modiefies: public, protected, private
+//     // private x: number;
+//     // private y: number;
 
-    getDistance(another: Point) {
+//     // Adding ? will make the parameter optional
 
-    }
-}
+//     constructor(private _x?: number, private _y?:number)
+//     {
+//         // this.x = x;
+//         // this.y = y;
+//     }
 
-//Object use for the above class
-let point = new Point();
-point.x = 3
-point.y = 5
-point.draw();
+//      draw() {
+//         console.log('x: ' + this._x + ', y: ' + this._y);
+//     }
+
+//     get x()
+//     {
+//         return this._x;
+//     }
+
+//     get y()
+//     {
+//         return this._y;
+//     }
+
+//     set x(value)
+//     {
+//         if(value < 0)
+//         {
+//             throw new Error('value cannot be less than 0.');
+//         }
+//         else
+//         {
+//             this._x = value;
+//         }
+//     }
+
+//     set y(value)
+//     {
+//         if(value < 0)
+//         {
+//             throw new Error('value cannot be less than 0.');
+//         }
+//         else
+//         {
+//             this._y = value;
+//         }
+//     }
+
+
+
+
+
+    // protected getDistance(another: Point) {
+
+    // }
+//}
+
+// //Object use for the above class
+// let point = new Point(1, 2);
+// // let x = point.X;
+// // point.X = 10;
+// let x = point.x;
+// point.x = 10;
+// point.draw();
 
 
 
