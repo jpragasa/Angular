@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoritesComponent implements OnInit {
 
-  constructor() { }
+  isActive = false;
+  // selection = document.getElementById("fav");
+  // starIcon = "glyphicon glyphicon-star-empty";
 
-  ngOnInit(): void {
+  constructor() { 
+    
   }
 
+  ngOnInit(): void {
+    
+  }
+
+  Click() {
+    this.isActive = !this.isActive;
+    
+    // if(this.isActive == true) {
+    //   this.starIcon = "glyphicon glyphicon-star";
+    //   this.selection.className = this.starIcon;
+    // }
+    // else {
+    //   this.starIcon = "glyphicon glyphicon-star-empty";
+    //   this.selection.className = this.starIcon;
+    // }
+  }
 }

@@ -50,4 +50,5 @@ export class CoursesComponent implements OnInit {
     document.querySelector("div").innerHTML = `${this.email}`;
   }
 
+
 }
