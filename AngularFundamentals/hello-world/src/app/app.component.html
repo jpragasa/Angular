@@ -1,5 +1,8 @@
+
+<!-- <app-courses></app-courses>
+<favorites></favorites>
 <input type="text" [(ngModel)]="title" (keyup.enter)="changeTitle()" maxLength=12/>
-<h1>{{title | titlecase}}</h1>
+<h1>{{title | titlecase}}</h1> -->
 
 <!-- Code for title case pipe: its basically here if you want to do it yourself -->
 <!-- 
@@ -45,3 +48,5 @@
 <!-- <app-courses></app-courses>
 <authors></authors> -->
 <!-- <favorites></favorites> -->
+
+<favorites [isFavorite]="post.isFavorite"></favorites>

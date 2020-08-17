@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'hello-world';
 
+  post = {
+    title: "Title",
+    isFavorite: true
+  }
+
   changeTitle() {
     document.querySelector("input").innerHTML = this.title;
   }
