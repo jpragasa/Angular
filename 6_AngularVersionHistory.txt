@@ -1,0 +1,15 @@
+AngularJS:
+- Introduced 2010
+
+Angular2:
+- Introduced 2016
+- Much different than AngularJS
+- Much easier to understand
+
+Angular4:
+- Not a major upgrade
+    Angular Libraries:
+        - @angular/core 2.3.0
+        - @angular/compiler 2.3.0
+        - @angular/http 2.3.0
+        - @angular/router 3.3.0

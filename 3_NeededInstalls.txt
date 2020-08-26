@@ -1,0 +1,5 @@
+Requirements:
+- Nodejs (to run js without the browser)
+- Once installed, check using node --version
+- npm (Node package manager), allows you to install 3rd party libraries
+    - npm install -g @angular/cli (Allows you to install the angular cli)

@@ -1,0 +1,3 @@
+Webpack:
+- Build automation tool
+- Updates webpage every change using Hot Module Replacement

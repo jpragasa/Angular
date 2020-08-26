@@ -1,0 +1,11 @@
+What is Angular?
+- A framework for building client applications in HTML, CSS, and JavaScript / Typescript
+- Typescript is preferred since Angular is made with it.
+- Angular is good for more complex web applications
+- Easier to Test than plain old JavaScript
+
+Benefits of Using Angular
+- Gives applications a clean structure
+- Includes a lot of re-usable code
+- Makes life Easier
+

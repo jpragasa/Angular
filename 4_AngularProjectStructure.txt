@@ -1,0 +1,66 @@
+e2e (End to End Tests):
+- Automated tests that simulate a real user
+
+node_modules:
+- Stores all the 3rd party libraries the application is dependent upon
+
+src:
+- Actual source code of the application
+- Initially has app folder and its appropriate component and module 
+* Every Application has at least one component and one module
+
+assets:
+- Stores static assets for our application (images, icons, etc...)
+
+enviroments:
+- Stores configuration settings for different environments
+- Production, testing, etc...
+
+favicon.ico:
+- The icon used in the browser
+
+index.html:
+- Simple base html file that contains angular application
+
+main.ts:
+- The starting point of the application
+- Gives us a starting point similar to a static void method in Java
+
+polyfills.ts:
+- imports scripts needed to run angular
+
+styles.css:
+- This is where you can add GLOBAL styles 
+
+test.ts:
+- Setting up our testing envornment 
+
+.angular-cli.json:
+- Standard configuration for angular
+
+.editorconfig:
+* When editing this or working with a team, ensure that EVERYONE is using the same configuration settings 
+
+.gitignore:
+- files to ignore when using git version control
+
+karma.conf.js:
+- config file for karma tests for javascript
+
+package.json:
+- Standard file for every node project
+- Includes:
+    - name of application
+    - version of application
+    - dependencies needed 
+    - devdependencies
+        - libraries needed to develop the application purely for developers
+
+protractor.conf.js
+- Used for running more testing
+
+tsconfig.json:
+- Settings for Typescript compiler 
+
+tsling.json:
+- Settings for tsling (static analysis tool for Typescript: checks for functionality errors)

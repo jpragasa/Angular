@@ -1,0 +1,16 @@
+Modern Applications:
+- Frontend (HTML, CSS, JS) -> User Interface
+- Backend (Python, Java, etc...) -> Data Processing
+
+API (Application Programming Interface)
+
+HTTP Services / APIs:
+- Endpoints that are accessible via the HTTP protocol
+
+Frontend:
+- HTML Templates
+- Presentation Logic
+
+Backend:
+- Data + APIs
+- Business Logic

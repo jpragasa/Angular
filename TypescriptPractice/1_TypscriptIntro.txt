@@ -1,0 +1,23 @@
+What is Typescript:
+- A superset of Javascript (Anything written in Typescript is valid Javascript)
+- Strong/Static Typing
+    - Specifying Object value is encouraged
+- Brings OOP features
+    - classes
+    - interfaces
+    - generics
+- Catches errors easier (compile or runtime)
+- Great tooling
+    - Intellisense
+
+
+Typescript -> Transpiles -> Javascript
+
+Install Typescript with:
+npm install -g Typescript
+
+check with:
+tsc --version
+
+transpile ts to js:
+tsc file_to_transpile.ts 
