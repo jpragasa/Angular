@@ -1,0 +1,26 @@
+What is a component?
+- Encapuslates the data HTML MARKUP and Logic for a view.
+- Every application has at least 1 component (App component)
+
+Steps for creating a component:
+1. Create component
+2. Register component in a Module
+3. Add an element in an HTML markup 
+
+COMMAND FOR GENERATING NEW COMPONENT:
+
+ng g c nameOfComponent
+
+**Components are meant to define the things that the user sees, anything related to the logic should be defined in a service, for example: the http logic for courses should be stored in a courses service
+
+COMMAND FOR GENERATING NEW SERVICE:
+
+ng g s nameOfService
+
+SINGLTON PATTERN:
+** A single instance of an object exists in memory for use throughout the application.
+
+Module
+- A group of related components
+- Every application has at least one
+- Ex: Courses, Messaging, Instructor, Admin Modules
