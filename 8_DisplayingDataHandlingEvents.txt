@@ -1,0 +1,9 @@
+Topics:
+- Display Data
+- Apply Classes / styles dynamically
+- Format data using pipes
+- Handle Events
+
+
+What is the DOM (Document Object Model)?
+- A model of objects that represents the structure of a document (Tree of objects in memory).

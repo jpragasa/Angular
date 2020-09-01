@@ -1,0 +1,11 @@
+How do you add bootstrap?
+- Have Node installed
+- use: npm install bootstrap --save
+
+Bootstrap numbering order
+Ex: "bootstrap": "^4.5.2"
+
+^ - Most recent version
+4 - major
+5 - minor
+2 - patch
